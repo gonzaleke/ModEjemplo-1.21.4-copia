@@ -12,6 +12,6 @@ public class ModEjemplo implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
+//
 	}
 }
