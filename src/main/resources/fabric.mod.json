@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "modejemplo",
+	"version": "${version}",
+	"name": "Mod Ejemplo",
+	"description": "Este es un mod de ejemplo, para probar que onda. Hecho por Gonzal",
+	"authors": [
+		"Gonza!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MTI",
+	"icon": "assets/modejemplo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.gonza.modejemplo.ModEjemploClient"
+		],
+		"main": [
+			"net.gonza.modejemplo.ModEjemplo"
+		],
+		"fabric-datagen": [
+			"net.gonza.modejemplo.ModEjemploDataGenerator"
+		]
+	},
+	"mixins": [
+		"modejemplo.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
