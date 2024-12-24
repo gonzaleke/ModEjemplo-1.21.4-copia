@@ -2,6 +2,7 @@ package net.gonza.modejemplo;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.gonza.modejemplo.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +13,6 @@ public class ModEjemplo implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
+		ModItems.registerModItems();
 	}
 }
